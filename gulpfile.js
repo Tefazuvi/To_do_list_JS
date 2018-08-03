@@ -52,7 +52,8 @@ gulp.task('watch', function () {
 
 gulp.task('html', function () {     
     gulp.src(paths.pages_src)
-        .pipe(gulp.dest(paths.pages_dist));
+        .pipe(gulp.dest(paths.pages_dist))
+        .pipe(connect.reload());
   });
 
 gulp.task('copy', function () {
