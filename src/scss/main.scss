@@ -17,10 +17,7 @@ body {
     width: 100%;
     text-align: center;
 
-    background-image: url('/images/wood.jpg');
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position: center;  
+    background-image: url('/images/wood.jpg');  
 
     &__input {
         width: 100%;
@@ -50,9 +47,6 @@ body {
     color: #fff;
 
     background-image: url('/images/blackboard.png');
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position: center;  
     width: 100%;
 
     padding: 20px;
@@ -62,21 +56,28 @@ body {
 
     &__typedtext {
         font-family: 'Waiting for the Sunrise', cursive; 
-        font-size:60px; 
+        font-size:40px; 
         letter-spacing: 6px; 
         font-weight: bold;
+
+        @media (min-width: 768px) {
+            font-size: 60px;
+        }
     }
     
     &__checkmark{
         background-image: url('/images/check.png');
-        background-size: contain; 
-        background-repeat: no-repeat; 
-        background-position: center; 
-        width: 100px;
-        height: 100px;
+        width: 40px;
+        height: 40px;
 
         position: absolute;
-        right: 40px;
+        right: 10px;
+
+        @media (min-width: 768px) {
+            width: 100px;
+            height: 100px;
+            right: 40px;
+        }
     }
 }
 
@@ -92,9 +93,19 @@ body {
     color: white;
 
     background-image: url('/images/blackboard.png');
-    background-size: cover; 
-    background-repeat: no-repeat; 
     background-position: right; 
     width: 100%;
     min-height: 600px;
+}
+
+.background_image--cover{
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+.background_image--contain{
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center;
 }

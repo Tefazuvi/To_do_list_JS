@@ -12,18 +12,18 @@
 </head>
 
 <body>
-    <header class="to_do_header">
+    <header class="to_do_header background_image--cover">
         <div class="to_do_header__typedtext" id="typedtext"></div>
-        <div class="to_do_header__checkmark"></div>
+        <div class="to_do_header__checkmark background_image--contain"></div>
     </header>
     <main>
-        <section class="new_task">
+        <section class="new_task background_image--cover">
             <form>
                 <input class="new_task__input" type="text" name="task" id="new_task" placeholder="Add a new task">
                 <button class="new_task__btn" id="add_task_btn" onclick="Module.addTask()" type="button">Add task</button>
             </form>
         </section>
-        <section class="task_list">
+        <section class="task_list background_image--cover">
             <form id="all_tasks"></form>
         </section>
     </main>
