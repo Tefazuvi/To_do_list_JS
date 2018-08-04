@@ -48,6 +48,7 @@ gulp.task('connect', function() {
 gulp.task('watch', function () {
   gulp.watch(paths.style_watch, ['style']);
   gulp.watch(paths.pages_src, ['html']);
+  gulp.watch('src/main.js', ['js']);
 });
 
 gulp.task('html', function () {     

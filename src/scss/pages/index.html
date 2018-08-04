@@ -7,20 +7,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>To-do List</title>
     <link rel="stylesheet" href="/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" />
 </head>
 
 <body>
+    <header class="to_do_header">
+        <div class="to_do_header__typedtext" id="typedtext"></div>
+        <div class="to_do_header__checkmark"></div>
+    </header>
     <main>
         <section class="new_task">
             <form>
                 <input class="new_task__input" type="text" name="task" id="new_task" placeholder="Add a new task">
-                <button class="new_task__btn" id="add_task_btn" onclick="" type="button">Add task</button>
+                <button class="new_task__btn" id="add_task_btn" onclick="Module.addTask()" type="button">Add task</button>
             </form>
         </section>
         <section class="task_list">
-
+            <form id="all_tasks"></form>
         </section>
     </main>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
