@@ -1,0 +1,111 @@
+@import "bootstrap.css";
+
+//Variables
+$font-stack: "Helvetica Neue";
+
+//General
+html,
+body {
+    background-origin: content-box;
+    font-family: $font-stack;
+    font-size: 16px;
+    height: 100%;
+}
+
+.new_task {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+
+    background-image: url('/images/wood.jpg');  
+
+    &__input {
+        width: 100%;
+        margin-bottom: 10px;
+
+        &::placeholder {
+            padding: 10px;
+        }
+
+        @media (min-width: 768px) {
+            width: 80%;
+        }
+    }
+
+    &__btn {
+        margin: 0px;
+        width: 100%;
+
+        @media (min-width: 768px) {
+            margin: 10px;
+            width: 100px;
+        }
+    }
+}
+
+.to_do_header{
+    color: #fff;
+
+    background-image: url('/images/blackboard.png');
+    width: 100%;
+
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__typedtext {
+        font-family: 'Waiting for the Sunrise', cursive; 
+        font-size:40px; 
+        letter-spacing: 6px; 
+        font-weight: bold;
+
+        @media (min-width: 768px) {
+            font-size: 60px;
+        }
+    }
+    
+    &__checkmark{
+        background-image: url('/images/check.png');
+        width: 40px;
+        height: 40px;
+
+        position: absolute;
+        right: 10px;
+
+        @media (min-width: 768px) {
+            width: 100px;
+            height: 100px;
+            right: 40px;
+        }
+    }
+}
+
+.task_list{
+    &__item {
+        margin: 15px;
+    }
+    display: flex;
+    padding: 30px 60px;
+    width: 100%;
+    font-family: 'Kalam', cursive;
+    font-size: 18px;
+    color: white;
+
+    background-image: url('/images/blackboard.png');
+    background-position: right; 
+    width: 100%;
+    min-height: 600px;
+}
+
+.background_image--cover{
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+.background_image--contain{
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center;
+}

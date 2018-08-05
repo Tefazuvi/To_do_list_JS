@@ -1,0 +1,30 @@
+{
+  "name": "to_do_list_js",
+  "version": "1.0.0",
+  "description": "JS/Gulp/Html/Sass/Bootstrap practice",
+  "main": "main.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tefazuvi/to_do_list_JS.git"
+  },
+  "author": "Stephanie Zuniga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tefazuvi/to_do_list_JS/issues"
+  },
+  "homepage": "https://github.com/Tefazuvi/to_do_list_JS#readme",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.2.0",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.5.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sass-glob": "^1.0.9",
+    "path": "^0.12.7"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.3"
+  }
+}
